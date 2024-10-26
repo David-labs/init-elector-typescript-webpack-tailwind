@@ -292,7 +292,8 @@ const createWindow = () => {
     mainWindow.focus();
   });
 
-  // mainWindow.webContents.openDevTools();
+  //开发者模式
+  mainWindow.webContents.openDevTools();
   mainWindow.loadURL(MAIN_WINDOW_WEBPACK_ENTRY);
 };
 
